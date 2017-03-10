@@ -9,6 +9,14 @@
 		<input class="fileLoad" type="file">
 		<button class="subFile">Save</button>
 	</div>
+	<div>
+		<input type="file" id="fileElem" accept="image/*" style="display:none" onchange="handleFiles(this.files)">
+		 <a href="#" id="fileSelect">Select some files</a>
+		 <div id="fileList">
+		 	<p>No files selected!</p>
+		 </div>
+		 <button id="uploadBtn">Up Load</button>
+	</div>
 </body>
 <script type="text/javascript" src="../javascripts/fileUpload.js"></script>
 </html>

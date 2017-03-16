@@ -2,9 +2,26 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>my first Canvas</title>
 </head>
 <body>
+    <canvas id="fstcanvas" width="400" height="250" class="playable-canvas"></canvas>
+    <p>The rectangle is 50px wide and 50px high</p>
+    <textarea id="code" class="playable-code" style="height: 150px;">
+        var x = 50;
+        var y = 50;
 
+        // Edit the two lines below here ONLY
+        x = 60;
+        y = 50;
+
+        ctx.fillStyle = 'green';
+        ctx.fillRect(10, 10, x, y);
+    </textarea>
+
+    <div class="playable-buttons">
+        <input id="reset" type="button" value="Reset" />
+    </div>
 </body>
+<script type="text/javascript" src="../javascripts/firstcanvas.js"></script>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Filtered Greeting</title>
+</head>
+<body>
+	<div class="output" style="min-height: 125px;">
+		<ul>
+			
+		</ul>
+	</div>
+	<textarea id="code" class="palyable-code" style="height: 290px; width: 500px;">
+		var list = document.querySelector('.output ul');
+		list.innerHTML = '';
+		var greetings = ['Happy Birthday!',
+						 'Merry Christmas my love',
+						 'A happy Christmas to all the family',
+						 'You\'re all I want for Christmas',
+						 'Get well soon'];
+
+		for (var i = 0; i < greetings.length; i++) {
+		  var input = greetings[i];
+		  // Your conditional test needs to go inside the parentheses
+		  // in the line below, replacing what's currently there
+		  if (greetings[i]) {
+			var result = input;
+			var listItem = document.createElement('li');
+			listItem.textContent = result;
+			list.appendChild(listItem);
+		  }
+		}
+	</textarea>
+
+	<div class="playable-buttons">
+		<input id="reset" type="button" value="Reset">
+		<input id="solution" type="button" value="Show Solution">
+	</div>
+</body>
+<script type="text/javascript" src="../javascripts/greeting.js"></script>
+</html>

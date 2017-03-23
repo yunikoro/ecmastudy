@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>my first Canvas</title>
+<link type="text/css" rel="stylesheet" href="../stylesheets/canvasTut.css">
 </head>
-<body>
+<body onload="draw()">
     <canvas id="fstcanvas" width="400" height="250" class="playable-canvas"></canvas>
     <p>The rectangle is 50px wide and 50px high</p>
     <textarea id="code" class="playable-code" style="height: 150px;">
@@ -22,6 +23,11 @@
     <div class="playable-buttons">
         <input id="reset" type="button" value="Reset" />
     </div>
+
+    <canvas id="tutorial" class="tutorial"></canvas>
+    <canvas id="rect" class="tutorial"></canvas>
+    <canvas id="tri" class="tutorial"></canvas>
+    <canvas id="smile" class="tutorial"></canvas>
 </body>
 <script type="text/javascript" src="../javascripts/firstcanvas.js"></script>
 </html>

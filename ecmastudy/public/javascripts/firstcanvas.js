@@ -77,5 +77,6 @@ function drowsmile() {
     ctx.moveTo(95, 65);
     ctx.arc(90, 65, 5, 0, Math.PI * 2, true);
     ctx.stroke();
+    
 }
 //document.body.addEventListener('load', draw);
